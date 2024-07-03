@@ -6,9 +6,9 @@
     </PropertyGroup>
     
     <PropertyGroup>
-        <Version>2.3.8.5</Version>
-        <AssemblyVersion>2.3.8.5</AssemblyVersion>
-        <FileVersion>2.3.8.5</FileVersion>
+        <Version>2.3.9.8</Version>
+        <AssemblyVersion>2.3.9.8</AssemblyVersion>
+        <FileVersion>2.3.9.8</FileVersion>
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -28,7 +28,7 @@
         <RepositoryUrl>https://github.com/ravahn/machina</RepositoryUrl>
         <NeutralLanguage>en</NeutralLanguage>
         <Description>Extension to Machina network library to support decoding of Final Fantasy XIV network data</Description>
-        <Copyright>Copyright © 2022 Ravahn</Copyright>
+        <Copyright>Copyright © 2024 Ravahn</Copyright>
         <PackageProjectUrl>https://github.com/ravahn/machina</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
@@ -54,7 +54,7 @@
     </ItemGroup>
  
     <ItemGroup>
-        <None Remove="Deucalion\Distrib\deucalion-0.9.3.dll" />
+        <None Remove="Deucalion\Distrib\deucalion-1.0.0.dll" />
         <None Remove="Deucalion\Distrib\deucalion-debug.dll" />
         <None Remove="Ravahn.Machina.Keyfile.snk" />
     </ItemGroup>
