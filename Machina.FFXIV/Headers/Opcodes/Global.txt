@@ -1,4 +1,4 @@
-﻿StatusEffectList|3c1
+﻿StatusEffectList|373
 StatusEffectList2|347
 StatusEffectList3|22c
 BossStatusEffectList|2db
