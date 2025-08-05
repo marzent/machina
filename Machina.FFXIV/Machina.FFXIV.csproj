@@ -6,14 +6,15 @@
     </PropertyGroup>
     
     <PropertyGroup>
-        <Version>2.4.0.1</Version>
-        <AssemblyVersion>2.4.0.1</AssemblyVersion>
-        <FileVersion>2.4.0.1</FileVersion>
+        <Version>2.4.3.1</Version>
+        <AssemblyVersion>2.4.3.1</AssemblyVersion>
+        <FileVersion>2.4.3.1</FileVersion>
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <NoWarn>1701;1702;CS0649;IDE0073</NoWarn>
         <PlatformTarget>x64</PlatformTarget>
+        <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     </PropertyGroup>
     
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'NuGet|AnyCPU' ">
@@ -28,13 +29,19 @@
         <RepositoryUrl>https://github.com/ravahn/machina</RepositoryUrl>
         <NeutralLanguage>en</NeutralLanguage>
         <Description>Extension to Machina network library to support decoding of Final Fantasy XIV network data</Description>
-        <Copyright>Copyright © 2024 Ravahn</Copyright>
+        <Copyright>Copyright © 2025 Ravahn</Copyright>
         <PackageProjectUrl>https://github.com/ravahn/machina</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='NuGet|netstandard2.0|AnyCPU'">
+      <Optimize>True</Optimize>
     </PropertyGroup>
  
     <ItemGroup>
         <None Remove="Ravahn.Machina.Keyfile.snk" />
+        <None Remove="Deucalion\Distrib\deucalion-1.2.1.dll" />
+      <None Remove="Ravahn.Machina.Keyfile.snk" />
     </ItemGroup>
 
     <ItemGroup>
@@ -57,5 +64,4 @@
             <PackagePath></PackagePath>
         </None>
     </ItemGroup>
-
 </Project>
